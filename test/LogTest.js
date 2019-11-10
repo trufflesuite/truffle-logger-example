@@ -1,15 +1,15 @@
-const LogMe = artifacts.require("./LogMe.sol");
+const MyDapp = artifacts.require("./MyDapp.sol");
 
-contract("LogMe", accounts => {
+contract("LogTest", accounts => {
   it("...should log properly", async () => {
-    const logMe = await LogMe.deployed();
+    const myDapp = await MyDapp.deployed();
 
     // Execute a transaction
-    const tx = await logMe.doSomething({ from: accounts[0] });
+    const tx = await myDapp.doSomething({ from: accounts[0] });
 
-    // Take all events, filter for our special __TLog event
-    const logEvts = tx.logs.filter(x => x.event === "__TLog");
-    console.log("No. of detected __TLog events: ", logEvts.length);
+    // Take all events, filter for our special __Log event
+    const logEvts = tx.logs.filter(x => x.event === "__Log");
+    console.log("No. of detected __Log events: ", logEvts.length);
 
     // For each __TLog event
     logEvts.forEach(evt => {

@@ -1,5 +1,7 @@
-const LogMe = artifacts.require("./LogMe.sol");
+const TruffleLogger = artifacts.require("./TruffleLogger.sol");
+const MyDapp = artifacts.require("./MyDapp.sol");
 
 module.exports = function(deployer) {
-  deployer.deploy(LogMe);
+  deployer.deploy(TruffleLogger);
+  deployer.deploy(MyDapp);
 };
