@@ -20,6 +20,6 @@ This is a prototype of a convenient way (read: dirty hack) to do `console.log` i
 
 Take a look at the following three files:
 
-- `contracts/MyDapp.sol`
-- `contracts/TruffleLogger.sol`
-- `test/LogTest.js`
+- [`contracts/MyDapp.sol`](./contracts/MyDapp.sol)
+- [`contracts/TruffleLogger.sol`](contracts/TruffleLogger.sol)
+- [`test/LogTest.js`](test/LogTest.js)
