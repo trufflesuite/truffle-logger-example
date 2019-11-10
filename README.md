@@ -4,7 +4,7 @@ This is a prototype of a convenient way (read: dirty hack) to do `console.log` i
 
 1. Import and inherit from `TruffleLogger.sol`:
 
-    ```
+    ```solidity
     import "./TruffleLogger.sol";
 
     contract MyDapp is TruffleLogger {
@@ -14,7 +14,7 @@ This is a prototype of a convenient way (read: dirty hack) to do `console.log` i
 
 2. Emit the event from TruffleLogger:
 
-    ```
+    ```solidity
     emit TruffleLogger.__Log(myVariable);
     ```
 
