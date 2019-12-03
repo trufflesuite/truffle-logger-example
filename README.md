@@ -18,7 +18,7 @@ This is a prototype of a convenient way (read: dirty hack) to do `console.log` i
     emit TruffleLogger.__Log(myVariable);
     ```
 
-Take a look at the following three files:
+Take a look at the following two files:
 
 - [`contracts/MyDapp.sol`](./contracts/MyDapp.sol)
 - [`test/LogTest.js`](test/LogTest.js)
