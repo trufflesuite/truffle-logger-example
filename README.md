@@ -1,4 +1,4 @@
-# Prototype logging for Solidity dev inside Truffle
+# Prototype logging for Solidity inside Truffle projects
 
 This is a prototype of a convenient way (read: dirty hack) to do `console.log` in your Solidity Truffle project.
 
