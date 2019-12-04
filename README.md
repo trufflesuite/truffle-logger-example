@@ -10,9 +10,19 @@ This is a prototype of a convenient way (read: dirty hack) to do `console.log` i
     npm i truffle@truffleLogger
     ```
 
-2. Execute `npx truffle develop` to spawn a Truffle develop console. This will run the version of Truffle you just installed.
+2. Spawn a Truffle develop console with the version of Truffle you just installed:
 
-3. Type `test` at the prompt and note the output with respect to what is logged in the [smart contract](./contracts/MyDapp.sol). Also note that there is no need to catch the events in your [test](./test/LogTest.js), it is automatically logged to the console.
+    ```shell
+    npx truffle develop
+    ```
+
+3. Run tests at the prompt:
+
+    ```
+    truffle(develop)> test
+    ```
+
+4. Note the output with respect to what is logged in the [smart contract](./contracts/MyDapp.sol). Also note that there is no need to catch the events in your [test](./test/LogTest.js), it is automatically logged to the console.
 
 
 ## Running inside an existing project
