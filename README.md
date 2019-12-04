@@ -2,6 +2,12 @@
 
 This is a prototype of a convenient way (read: dirty hack) to do `console.log` in your Solidity Truffle project. It requires a couple things:
 
+1. Install `truffle@truffleLogger`:
+
+    ```shell
+    npm i truffle@truffleLogger
+    ```
+
 1. Import and inherit from `truffle/TruffleLogger.sol`:
 
     ```solidity
@@ -12,7 +18,7 @@ This is a prototype of a convenient way (read: dirty hack) to do `console.log` i
     }
     ```
 
-2. Emit the event from TruffleLogger:
+1. Emit the event from TruffleLogger:
 
     ```solidity
     emit TruffleLogger.__Log(myVariable);
