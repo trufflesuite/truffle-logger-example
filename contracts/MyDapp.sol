@@ -11,11 +11,11 @@ contract MyDapp is TruffleLogger {
   address myAddress = address(this);
 
   function doSomething() public {
-    TruffleLogger.Log(myBool);
-    TruffleLogger.Log(myInt);
-    TruffleLogger.Log(myUint);
-    TruffleLogger.Log(myString);
-    TruffleLogger.Log(myBytes32);
-    TruffleLogger.Log(myAddress);
+    TruffleLogger.log(myBool);
+    TruffleLogger.log(myInt);
+    TruffleLogger.log(myUint);
+    TruffleLogger.log(myString);
+    TruffleLogger.log(myBytes32);
+    TruffleLogger.log(myAddress);
   }
 }
