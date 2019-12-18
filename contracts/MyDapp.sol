@@ -2,7 +2,7 @@ pragma solidity >=0.4.21 <0.6.0;
 
 import "truffle/TruffleLogger.sol";
 
-contract MyDapp is TruffleLogger {
+contract MyDapp {
   bool myBool = true;
   int myInt = -4321;
   uint myUint = 1234;
