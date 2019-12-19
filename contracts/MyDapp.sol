@@ -1,6 +1,6 @@
 pragma solidity >=0.4.21 <0.6.0;
 
-import "./TruffleLogger.sol";
+import "truffle/TruffleLogger.sol";
 
 contract MyDapp is TruffleLogger {
   bool myBool = true;
