@@ -45,10 +45,10 @@ This is what you need to do to use the logger inside your existing Truffle proje
     }
     ```
 
-3. Emit the event from TruffleLogger:
+3. Call the logging function from TruffleLogger:
 
     ```solidity
-    emit TruffleLogger.__Log(myVariable);
+    TruffleLogger.log(myVariable);
     ```
 
 Take a look at the following two files:
