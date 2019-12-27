@@ -1,6 +1,6 @@
 pragma solidity >=0.4.21 <0.6.0;
 
-import "truffle/TruffleLogger.sol";
+import "truffle/Console.sol";
 
 contract MyDapp {
   bool myBool = true;
@@ -11,11 +11,11 @@ contract MyDapp {
   address myAddress = address(this);
 
   function doSomething() public {
-    TruffleLogger.log(myBool);
-    TruffleLogger.log(myInt);
-    TruffleLogger.log(myUint);
-    TruffleLogger.log(myString);
-    TruffleLogger.log(myBytes32);
-    TruffleLogger.log(myAddress);
+    Console.log(myBool);
+    Console.log(myInt);
+    Console.log(myUint);
+    Console.log(myString);
+    Console.log(myBytes32);
+    Console.log(myAddress);
   }
 }

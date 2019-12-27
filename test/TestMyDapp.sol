@@ -1,11 +1,11 @@
 pragma solidity >=0.4.25 <0.7.0;
 
-import "truffle/TruffleLogger.sol";
+import "truffle/Console.sol";
 
 contract TestLogger {
 
   function testLogger() public {
     string memory myString = "myString";
-    TruffleLogger.log(myString);
+    Console.log(myString);
   }
 }
