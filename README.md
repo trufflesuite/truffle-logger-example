@@ -4,6 +4,8 @@ This is an experimental feature for Truffle that allows for a `console.log`-equi
 
 ## Running this example project
 
+Clone this project, and then run the following steps:
+
 1. Install `truffle@truffleLogger`:
 
     ```shell
@@ -22,7 +24,7 @@ This is an experimental feature for Truffle that allows for a `console.log`-equi
     truffle(develop)> test
     ```
 
-4. Note the output with respect to what is logged in the [smart contract](./contracts/MyDapp.sol). Also note that there is no need to catch the events in your [test](./test/LogTest.js), it is automatically logged to the console.
+4. Note the output with respect to what is logged in the [smart contract](./contracts/MyDapp.sol).
 
 
 ## Running inside an existing project
@@ -47,7 +49,7 @@ This is what you need to do to use the logger inside your existing Truffle proje
     Console.log(myVariable);
     ```
 
-Take a look at the following two files:
+For reference, take a look at the following two files:
 
 - [`contracts/MyDapp.sol`](./contracts/MyDapp.sol)
 - [`test/LogTest.js`](./test/LogTest.js)
