@@ -2,17 +2,19 @@
 
 This is an experimental feature for Truffle that allows for a `console.log`-equivalent in your Solidity Truffle project.
 
+Please leave your feedback in this issue: https://github.com/trufflesuite/truffle-logger-example/issues/3
+
 ## Running this example project
 
 Clone this project, and then run the following steps:
 
-1. Install `truffle@truffleLogger`:
+1. Install the version of Truffle published under the `truffleLogger` tag:
 
     ```shell
     npm i truffle@truffleLogger
     ```
 
-2. Spawn a Truffle develop console with the version of Truffle you just installed:
+2. Spawn a Truffle develop console:
 
     ```shell
     npx truffle develop
@@ -31,7 +33,7 @@ Clone this project, and then run the following steps:
 
 This is what you need to do to use the logger inside your existing Truffle projects:
 
-1. Install `truffle@truffleLogger`:
+1. Install the version of Truffle published under the `truffleLogger` tag:
 
     ```shell
     npm i truffle@truffleLogger
@@ -43,7 +45,7 @@ This is what you need to do to use the logger inside your existing Truffle proje
     import "truffle/Console.sol";
     ```
 
-3. Call the logging function from TruffleLogger:
+3. Call the logging function:
 
     ```solidity
     Console.log(myVariable);
@@ -53,3 +55,4 @@ For reference, take a look at the following two files:
 
 - [`contracts/MyDapp.sol`](./contracts/MyDapp.sol)
 - [`test/LogTest.js`](./test/LogTest.js)
+- [`test/TestMyDapp.sol`](./test/TestMyDapp.sol)
