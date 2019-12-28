@@ -37,10 +37,10 @@ This is what you need to do to use the logger inside your existing Truffle proje
     npm i truffle@truffleLogger
     ```
 
-2. Import and inherit from `truffle/TruffleLogger.sol`:
+2. Import and inherit from `truffle/Console.sol`:
 
     ```solidity
-    import "truffle/TruffleLogger.sol";
+    import "truffle/Console.sol";
     ```
 
 3. Call the logging function from TruffleLogger:
