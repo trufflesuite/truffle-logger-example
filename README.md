@@ -1,6 +1,6 @@
-# Prototype logging for Solidity inside Truffle projects
+# `Console.log` for Solidity with Truffle
 
-This is a prototype of a convenient way (read: dirty hack) to do `console.log` in your Solidity Truffle project.
+This is an experimental feature for Truffle that allows for a `console.log`-equivalent in your Solidity Truffle project.
 
 ## Running this example project
 
@@ -39,16 +39,12 @@ This is what you need to do to use the logger inside your existing Truffle proje
 
     ```solidity
     import "truffle/TruffleLogger.sol";
-
-    contract MyDapp is TruffleLogger {
-      ...
-    }
     ```
 
 3. Call the logging function from TruffleLogger:
 
     ```solidity
-    TruffleLogger.log(myVariable);
+    Console.log(myVariable);
     ```
 
 Take a look at the following two files:
