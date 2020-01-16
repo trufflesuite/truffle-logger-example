@@ -4,6 +4,36 @@ This is an experimental feature for Truffle that introduces a `console.log`-equi
 
 Please leave your feedback in this issue: https://github.com/trufflesuite/truffle-logger-example/issues/3
 
+## Example
+
+Simply import the Console library:
+
+```
+import "truffle/Console.sol";
+```
+
+And just log out your variables with `Console.log` like this!
+
+```
+Console.log(myBool);
+Console.log(myInt);
+Console.log(myUint);
+Console.log(myString);
+Console.log(myBytes32);
+Console.log(myAddress);
+```
+
+You can also pass in a label for your variable so it's easier to track:
+
+```
+Console.log("This is myBool", myBool);
+Console.log("This is myInt", myInt);
+Console.log("This is myUint", myUint);
+Console.log("This is myString", myString);
+Console.log("This is myBytes32", myBytes32);
+Console.log("This is myAddress", myAddress);
+```
+
 ## Running this example project
 
 Clone this project, and then run the following steps:
