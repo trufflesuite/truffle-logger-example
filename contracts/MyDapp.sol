@@ -1,6 +1,6 @@
 pragma solidity >=0.4.21 <0.6.0;
 
-import "truffle/Console.sol";
+import "./Console.sol";
 
 contract MyDapp {
   bool myBool = true;
@@ -17,5 +17,12 @@ contract MyDapp {
     Console.log(myString);
     Console.log(myBytes32);
     Console.log(myAddress);
+
+    Console.log("This is myBool", myBool);
+    Console.log("This is myInt", myInt);
+    Console.log("This is myUint", myUint);
+    Console.log("This is myString", myString);
+    Console.log("This is myBytes32", myBytes32);
+    Console.log("This is myAddress", myAddress);
   }
 }
